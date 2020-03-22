@@ -1,0 +1,19 @@
+.login-body {
+	background: url("../../../images/lotus.jpeg") no-repeat;
+	background-size:100% 100%;
+	background-attachment:fixed;
+}
+ .ui-login-button {
+	text-align: left;
+    border-width: 1px 0 0 0;
+    background-image: none;
+    border-top:1px solid #2c4359;
+    padding: 1em 1em .5em 2em;
+}
+#verifyCodeImage {
+	margin-top: .5em;
+}
+#verifyCodeImage:hover {
+	cursor: pointer;
+}
+ 

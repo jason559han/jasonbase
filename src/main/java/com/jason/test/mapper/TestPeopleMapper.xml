@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jason.test.dao.TestPeopleDao">
+    <resultMap type="testPeople" id="testPeopleResult">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+    </resultMap>
+ 
+    <select id="getTestPeopleById" parameterType="Integer" resultType="TestPeople">
+        SELECT * FROM testpeople WHERE id = #{peopleId}
+    </select>
+ 
+    <select id="getTestPeopleList" resultMap="testPeopleResult">
+        SELECT * FROM testpeople
+    </select>
+
+	<insert id="insertTestPeople" parameterType="TestPeople">
+		insert into testpeople(name,age) values (#{name},#{age})
+	</insert>
+
+	<update id="updateTestPeople" parameterType="TestPeople">
+		update testpeople set name=#{name},age=#{age} where id=#{id}
+	</update>
+
+	<delete id="deleteTestPeopleById" parameterType="Integer">
+		delete from testpeople where id=#{id}
+	</delete>
+</mapper>

@@ -1,0 +1,43 @@
+
+/* ui区域窗口样式 */
+.ui-area {
+	width: 98%;
+	margin: 10px 3px;
+	font-size: 0.8em;
+}
+.ui-area-content {
+	padding: 5px 5px;
+}
+
+/* 工具栏按钮 */
+.toolBtn {
+	margin-left: 3px;
+	margin-right: 5px;
+}
+
+/* 表格样式 */
+.ui-table {
+	width: 98%;
+}
+.ui-small-table {
+	width: 100%;
+	padding: 0;
+}
+.ui-small-table th,.ui-small-table td {
+	border: 1px solid;
+}
+
+/* 错误字段 */
+.red {
+	color: red;
+}
+
+/* 悬浮框关闭按钮隐藏 */
+.suspend-dialog .ui-dialog-titlebar-close{ 
+	display: none; 
+} 
+
+/* 去掉悬浮窗口空白 */
+.ui-dialog .ui-widget-content {
+	padding: 3px;
+}

@@ -1,0 +1,35 @@
+.ui-login-div {
+	position: absolute;
+	display: block;
+	width: 280px;
+	height: 430px;
+	overflow: auto;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	padding: .2em;
+    outline: 0;
+}
+.ui-login-titlebar {
+	padding: .4em 1em;
+    position: relative;
+}
+.input-login-div {
+	width: auto;
+    min-height: 0;
+    max-height: none;
+    height: auto;
+    position: relative;
+    border: 0;
+    padding: .5em 1em;
+    background: none;
+    overflow: auto;
+}
+.input-login-div input {
+	height: 1.6em;
+}
